@@ -27,7 +27,7 @@ const user3: User = {
   id: '3',
   name: 'Fabiola Aurelien',
   email: 'fabulousone@example.com',
-  role: 'Senior Software Engineer-HWIC',
+  role: 'Senior Software Engineer',
   avatarUrl: meAvatar
 };
 
