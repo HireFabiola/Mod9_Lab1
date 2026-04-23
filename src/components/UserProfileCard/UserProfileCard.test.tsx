@@ -1,6 +1,6 @@
 import React from 'react';
 // Importing avatars and types for users and profile card props
-import maleAvatar from '../../assets/maleAvatar.jpeg'
+// import maleAvatar from '../../assets/maleAvatar.jpeg'
 import femaleAvatar from '../../assets/femaleAvatar.jpeg'
 import meAvatar from '../../assets/meAvatar.jpeg'
 import type { User, UserProfileCardProps } from '../../types';
@@ -12,7 +12,7 @@ const user1: User = {
   name: 'John Doe',
   email: 'john.doe@example.com',
   role: 'Software Engineer',
-  avatarUrl: maleAvatar,
+  avatarUrl: null
 };
 
 const user2: User = {
@@ -37,8 +37,8 @@ const user1ProfileCardProps: UserProfileCardProps = {
   user: user1,
   showEmail: false,
   showRole: false,
-  onEdit: (userId: string) => alert(`Editing user ${userId}`),
-  children: <div className="text-sm text-gray-500">Last login: 2 hours ago</div>
+  // onEdit: (userId: string) => alert(`Editing user ${userId}`),
+  // children: <div className="text-sm text-gray-500">Last login: 2 hours ago</div>
 };
 
 const user2ProfileCardProps: UserProfileCardProps = {
@@ -53,8 +53,8 @@ const user3ProfileCardProps: UserProfileCardProps = {
   user: user3,
   showEmail: true,
   showRole: true,
-  onEdit: (userId: string) => alert(`Editing user ${userId}`),
-  children: <div className="text-sm text-gray-500">Last login: .5 hour ago</div>
+  onEdit: (userId: string) => alert(`Not allowed to edit user ${userId}`),
+  children: <div className="text-sm text-gray-500">Administarive Access Granted</div>
 };
 
 // Call to component that renders profile cards with the configured props
