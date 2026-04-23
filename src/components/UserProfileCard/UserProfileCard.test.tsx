@@ -1,4 +1,5 @@
 import React from 'react';
+// Importing avatars and types for users and profile card props
 import maleAvatar from '../../assets/maleAvatar.jpeg'
 import femaleAvatar from '../../assets/femaleAvatar.jpeg'
 import meAvatar from '../../assets/meAvatar.jpeg'
@@ -31,7 +32,7 @@ const user3: User = {
 };
 
 
-// Create corresponding profile card configurations
+// Create profile card configurations for each user with different prop combinations
 const user1ProfileCardProps: UserProfileCardProps = {
   user: user1,
   showEmail: false,
@@ -56,15 +57,13 @@ const user3ProfileCardProps: UserProfileCardProps = {
   children: <div className="text-sm text-gray-500">Last login: .5 hour ago</div>
 };
 
-// Test component that renders profile cards with the configured props
+// Call to component that renders profile cards with the configured props
 export const UserProfileCardTest: React.FC = () => {
   return (
     <div className="space-y-4">
       <UserProfileCard {...user3ProfileCardProps} />
       <UserProfileCard {...user2ProfileCardProps} />
       <UserProfileCard {...user1ProfileCardProps} />
-
-
     </div>
   );
 };

@@ -11,7 +11,7 @@ export const UserProfileCard: React.FC<UserProfileCardProps> = ({
   return (
     <div className="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
       <div className="px-6 py-4">
-        <div className="flex items-center mb-4">
+        <div className="flex flex-col items-center mb-4">
           {user.avatarUrl && (
             <img
               className="w-12 h-12 rounded-full mr-4"
@@ -19,11 +19,12 @@ export const UserProfileCard: React.FC<UserProfileCardProps> = ({
               alt={user.name}
             />
           )}
-          <div>
+         
+        </div>
+        <h2 className="text-xl font-extrabold !text-gray-900 text-center w-full mb-2">{user.name}</h2>
+        <div>
             {showRole && <p className="text-gray-600">{user.role}</p>}
           </div>
-        </div>
-        <h2 className="text-xl font-semibold text-black text-center w-full mb-2">{user.name}</h2>
         {showEmail && (
           <p className="text-gray-600 text-center">{user.email}</p>
         )}
