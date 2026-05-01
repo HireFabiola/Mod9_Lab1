@@ -1,12 +1,11 @@
 import React from 'react';
-// Importing avatars and types for users and profile card props
-// import maleAvatar from '../../assets/maleAvatar.jpeg'
+
 import femaleAvatar from '../../assets/femaleAvatar.jpeg'
 import meAvatar from '../../assets/meAvatar.jpeg'
 import type { User, UserProfileCardProps } from '../../types';
 import { UserProfileCard } from './UserProfileCard';
 
-// Create user instances
+// Create user instances 
 const user1: User = {
   id: '1',
   name: 'John Doe',
@@ -32,7 +31,7 @@ const user3: User = {
 };
 
 
-// Create profile card configurations for each user with different prop combinations
+// Create profile card configurations for each user with different prop combinations for testing
 const user1ProfileCardProps: UserProfileCardProps = {
   user: user1,
   showEmail: false,
