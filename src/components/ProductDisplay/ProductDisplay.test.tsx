@@ -38,36 +38,6 @@ const product4 = {
     inStock: true
 };
 
-// // Create each product display configuration with different prop combinations
-// const product1DisplayProps = {
-//     product: product1,
-//     showDescription: true,
-//     showStockStatus: true,
-//     onAddToCart: (productId: string) => alert(`Added product ${productId} to cart`),
-// };
-
-// const product2DisplayProps = {
-//     product: product2,
-//     showDescription: true,
-//     showStockStatus: false,
-//     //   onAddToCart: (productId: string) => alert(`Added product ${productId} to cart`),
-// };
-
-// const product3DisplayProps = {
-//     product: product3,
-//     showDescription: false,
-//     showStockStatus: true,
-//     onAddToCart: (productId: string) => alert(`Item ${productId} is out of stock.  We will move to wishlist until we restock.`),
-// };
-
-
-// const product4DisplayProps = {
-//     product: product4,
-//     showDescription: false,
-//     showStockStatus: false,
-//     onAddToCart: (productId: string) => alert(`Item ${productId} may or may not be available.  We will move to wishlist until we can confirm availability.`),
-// };
-
 // Call to component that renders profile cards with the configured props
 export const ProductDisplayTest: React.FC = () => {
     return (
