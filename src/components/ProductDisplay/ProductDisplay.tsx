@@ -1,12 +1,16 @@
 import type { ProductDisplayProps } from "../../types";
 
+// Declaration of the ProductDisplay function
 export function ProductDisplay({
+ // Props expected for this function call
   product,
   showDescription = true,
   showStockStatus = true,
   onAddToCart,
   children,
 }: ProductDisplayProps) {
+
+  // Display product according to following layout 
   return (
     <div className="p-4 border rounded-lg shadow bg-white">
       <img src={product.imageUrl} alt={product.name} className="w-full h-100  object-contain mb-4 rounded" />
