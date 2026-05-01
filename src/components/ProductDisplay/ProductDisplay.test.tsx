@@ -1,6 +1,7 @@
 import type { Product } from '../../types';
 import { ProductDisplay } from './ProductDisplay';
 
+// ChatGPT created product test file based on product interface
 const product1: Product = {
     id: '1',
     name: 'Wireless Headphones',

@@ -3,8 +3,10 @@ import React from 'react';
 import type { AlertType } from '../../types';
 import { AlertBox } from './AlertBox';
 
+// Function to return proper alert message based on prop passed
 export const AlertBoxTest: React.FC<{ type: AlertType }> = ({ type }) => {
     return (
+
         type === "success" ? (
             <AlertBox
                 type="success"
